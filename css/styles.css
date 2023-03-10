@@ -1,0 +1,27 @@
+html {
+    font-size: 10px;
+}
+
+.mem_img {
+    width: 30rem;
+    height: 30rem;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.accordeon {
+    display: block;
+}
+
+
+.accordeon_body {
+    display: none;
+}
+
+.accordeon:checked + .accordeon_body {
+display: block;
+
+
+}
