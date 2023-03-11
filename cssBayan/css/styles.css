@@ -22,7 +22,7 @@ h1 {
 }
 
 .item__container {
-    border-top: solid 0.1rem gray;
+    border-top: solid 0.1rem rgb(148, 148, 148);
 }
 
 input {
