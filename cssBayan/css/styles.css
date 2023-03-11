@@ -112,7 +112,7 @@ input:checked ~ label svg {
     }
 
     label span {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 }
 
