@@ -6,8 +6,9 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: .6rem;
     font-family: 'Tilt Warp';
+    user-select: none;
 
 }
 
@@ -21,7 +22,7 @@ h1 {
 }
 
 .item__container {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     border-top: solid 0.1rem gray;
 }
 
@@ -30,6 +31,7 @@ input {
 }
 
 label{
+    padding: 1rem 0;
     font-size: 3rem;
     flex-wrap: wrap;
     display: flex;
@@ -37,9 +39,25 @@ label{
     color: blue;
 }
 
+label:hover .accordeon_body .mem_img {
+    width: 30rem;
+    height: 30rem;
+}
+
+label:hover .plus .icon{
+    transform: rotate(45deg);
+}
 .label__container {
     display: block;
     
+}
+
+.label__container:active{
+ opacity: 0.8;
+}
+
+.label__container:active label span {
+    color: blue;
 }
 
 .icon {
@@ -87,7 +105,6 @@ input:checked ~ label svg {
 .wrapper:hover *{
     cursor: pointer;
     color: black;
-    fill: black;
 }
 
 .wrapper:hover .icon {
@@ -98,7 +115,6 @@ input:checked ~ label svg {
 
     h1 {
         font-size: 3rem;
-        color: green;
     }
 
     label span {
@@ -110,7 +126,6 @@ input:checked ~ label svg {
 
     h1 {
         font-size: 3rem;
-        color: green;
     }
 
     label span {
@@ -128,7 +143,6 @@ input:checked ~ label svg {
 
     h1 {
         font-size: 2rem;
-        color: yellow;
     }
 
     label span {
@@ -140,7 +154,6 @@ input:checked ~ label svg {
 
     h1 {
         font-size: 2rem;
-        color: yellow;
     }
 
     label span {
@@ -164,5 +177,9 @@ input:checked ~ label svg {
 @media (hover: none) {
     .icon {
         opacity: 1;
+    }
+
+    label {
+        color: #000;
     }
 }
