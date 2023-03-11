@@ -18,7 +18,9 @@ h1 {
 }
 
 .item__container {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    padding: 1rem 0;
+    border-top: solid 0.1rem gray;
 
 }
 
@@ -30,6 +32,7 @@ label {
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
+    color: blue;
     /* background-color: blue; */
 }
 
@@ -38,26 +41,43 @@ label {
     
 }
 
+.icon {
+    display: block;
+    width: 2.3rem;
+    height: 2.3rem;
+    fill:  blue;
+}
+
 .mem_img {
     display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    transition: width 0.3s, heigth 0.3s;
+}
+
+
+input:checked ~ .accordeon_body .mem_img {
     width: 30rem;
     height: 30rem;
-    margin: 0 auto;
-}
-
-/* body {
-    background-color: aquamarine;
-} */
-
-
-.accordeon_body {
-    display: none;
-}
-
-input:checked ~ .accordeon_body {
-display: block;
 }
 
 input:checked ~ label .plus {
+    transition: 0.3s;
     transform: rotate(45deg);
+}
+
+input:checked ~ label {
+    color: black;
+}
+
+input:checked ~ label svg {
+    fill: black;
+}
+
+.wrapper:hover *{
+    transition: 0.3s;
+    cursor: pointer;
+    color: black;
+    fill: black;
 }
